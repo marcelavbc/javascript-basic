@@ -13,15 +13,17 @@ let decimalClicked = false;
 
 function numButPress(num) {
     if (resultVal) {
+        console.log(resultVal)
         newVal = num;
         resultVal = ""
-    } else {
+    }  else {
         if (num === ".") {
-            if (decimalClicked != true) {
+            if (!decimalClicked) {
                 decimalClicked = true;
                 newVal += num;
             }
-        } else {
+        }
+        else {
             newVal += num
         }
     }
@@ -38,9 +40,6 @@ function mathButPress(operator) {
     decimalClicked = false;
     mathOperator = operator;
     resultVal = "";
-    document.getElementById("entry").value = 0
-    console.log('operator', mathOperator);
-
 }
 
 function equalButPress() {

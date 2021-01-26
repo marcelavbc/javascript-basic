@@ -19,20 +19,14 @@ body {
 
 .calc-container {
     width: 300px;
-    background-color: rgb(167, 165, 154);
+    background-color: rgb(126, 125, 122);
     border-radius: 20px;
     padding: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.numBut {
-    height: 59px;
-    width: 59px;
-    margin: 10px 4px;
-    border: none !important;
-}
-
+.numBut,
 .mathBut {
     height: 59px;
     width: 59px;
